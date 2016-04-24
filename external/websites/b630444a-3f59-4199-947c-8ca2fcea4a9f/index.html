@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>#codevember Date-Swiper Calendar</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div ng-app="app" ng-controller="mainController">
+	<!--<section>
+   <h3><a href="#/" ng-click="showCalendar('today')">show today</a> |
+  <a href="#/" ng-click="showCalendar('tomorrow')">show tomorrow</a> |
+  <a href="#/" ng-click="setDate('yesterday')">set yesterday</a> |
+		<a href="#/" ng-click="setDate('')">set null</a></h3>
+  <p>Date: {{date | date: 'fullDate'}}</p>
+  <a href="#/" ng-click="showCalendar(date)">show</a>
+  {{cal}}
+</section>  --> 
+<date-swiper config="config" date="date"></date-swiper>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

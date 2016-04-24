@@ -1,0 +1,52 @@
+html {
+  background-color: D9D9D9;
+  height: 100%;
+}
+body {
+  min-height: 70%;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  color: #02BBD2;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+a {
+  display: block;
+  margin-bottom: 1em;
+  color: #E7F7F5;
+  text-decoration: none;
+}
+a:last-of-type {
+  font-size: 0.9em;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  margin-bottom: 4em;
+}
+.chart {
+  display: inline-block;
+  width: 200px;
+  height: 85px;
+  margin: 0 10px;
+  vertical-align: top;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+.chart span {
+  display: block;
+  font-size: 2em;
+  font-weight: normal;
+}
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

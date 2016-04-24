@@ -1,0 +1,212 @@
+.date-swiper {
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3.5vmin;
+  font-family: "DIN Alternate", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.date-swiper *, .date-swiper *::before, .date-swiper *::after {
+  box-sizing: border-box;
+}
+.date-swiper ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.date-swiper ul li {
+  list-style-type: none;
+  padding: .2em 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 14.285714286%;
+      -ms-flex: 1 0 14.285714286%;
+          flex: 1 0 14.285714286%;
+  text-align: center;
+}
+.date-swiper .carousel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.date-swiper .carousel.animate {
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+.date-swiper .month {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  padding: .5em;
+  position: relative;
+}
+.date-swiper .month-name {
+  font-size: 1.2em;
+  padding: .5em;
+}
+.date-swiper .day-names {
+  font-size: .8em;
+  line-height: 1.5;
+}
+.date-swiper .days {
+  font-size: 1em;
+  line-height: 2;
+}
+.date-swiper .date {
+  padding: 0;
+  border-radius: 100%;
+  margin: .3em auto;
+  width: 2em;
+  height: 2em;
+  pointer-events: none;
+}
+
+.date-swiper .toggle {
+  bottom: 1em;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+  height: 2.3em;
+  width: 2.3em;
+  line-height: 1;
+  border-radius: 100%;
+}
+.date-swiper .toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: .3em;
+  border-style: solid;
+  border-width: 0 .1em .1em 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(-50%, -70%) rotate(45deg);
+          transform: translate(-50%, -70%) rotate(45deg);
+}
+
+.date-swiper::after {
+  content: 'swipe \2190  or \2192  to change';
+  position: absolute;
+  text-transform: uppercase;
+  font-size: .8em;
+  opacity: .4;
+  z-index: 1;
+  left: 50%;
+  bottom: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.date-swiper {
+  z-index: 5;
+  background: #23292C;
+  color: #f3f4f5;
+  -webkit-transform: translate3d(0%, 100%, 0);
+          transform: translate3d(0%, 100%, 0);
+}
+.date-swiper:not(.dragging) {
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+.date-swiper.is-active {
+  -webkit-transform: translate3d(0%, 0%, 0);
+          transform: translate3d(0%, 0%, 0);
+}
+.date-swiper .month {
+  background: #00BCD4;
+}
+.date-swiper .month-name {
+  text-transform: uppercase;
+}
+.date-swiper .month-year {
+  opacity: .65;
+}
+.date-swiper .day-names {
+  text-transform: uppercase;
+  border-top: .1em solid;
+  border-bottom: .1em solid;
+  color: rgba(35, 41, 44, 0.5);
+}
+.date-swiper .days li:not(.day-in-curr-month) {
+  opacity: .65;
+}
+.date-swiper .is-today .date {
+  background: rgba(35, 41, 44, 0.25);
+}
+.date-swiper .is-selected .date {
+  background: #f06292;
+  color: #f3f4f5;
+  box-shadow: 0 0 0 .1em;
+}
+.date-swiper .toggle {
+  background: rgba(35, 41, 44, 0.25);
+  color: #E2E4E6;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+html section, body section {
+  padding: 2em;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+body > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}

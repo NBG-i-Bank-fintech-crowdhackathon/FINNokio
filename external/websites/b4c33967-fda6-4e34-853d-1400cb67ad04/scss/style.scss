@@ -1,0 +1,62 @@
+$fendersblue: #165578;
+
+// Generic styling
+body {
+  background: $fendersblue;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+// Heading has to be inline so the border wraps on multiple lines
+// Add in a line height to give it some spacing
+// and some padding to put a gap between the border and the text
+
+h1 {
+  color: white;
+  display: inline; 
+  border-bottom: 3px solid darken($fendersblue, 10);
+  padding-bottom: 8px;
+  line-height: 1.75em;
+}
+
+// Stop the heading from being inline and give it some margin.
+h1:after,
+h1:before {
+  content: "";
+  display:block;
+ margin: 1em 0;
+}
+
+//Maybe make it fancy with border image
+.fancy {
+  border-width: 0 0 5px;
+  border-style: solid;
+border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill round;
+}
+
+.fancy2a {
+  border-width: 0 0 5px;
+  border-style: solid;
+border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill stretch;
+}
+
+.fancy2 {
+  box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.3);
+}
+
+.fancy3 {
+  background-color: darken($fendersblue, 5);
+
+}
+
+.fancy4 {
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, darken($fendersblue,11), darken($fendersblue,1)) 10% round;
+  
+}
+

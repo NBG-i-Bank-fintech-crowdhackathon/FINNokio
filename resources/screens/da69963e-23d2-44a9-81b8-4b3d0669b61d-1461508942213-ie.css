@@ -1,0 +1,35 @@
+#s-da69963e-23d2-44a9-81b8-4b3d0669b61d #s-Rectangle_1 {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #404040;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #404040;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #404040;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: #404040;
+  -ms-transform: rotate(0.0deg);
+}
+#s-da69963e-23d2-44a9-81b8-4b3d0669b61d #s-White-background {
+  -ms-transform: rotate(0.0deg);
+}
+#s-da69963e-23d2-44a9-81b8-4b3d0669b61d #s-Button {
+  -ms-transform: rotate(0.0deg);
+}
+#s-da69963e-23d2-44a9-81b8-4b3d0669b61d #s-Image_1 {
+  -ms-transform: rotate(0.0deg);
+}
+#jim-container .ui-page {
+  overflow-x: hidden;
+}
+.non_jim_mobile #simulation {
+  overflow-x: hidden;
+}
+#s-da69963e-23d2-44a9-81b8-4b3d0669b61d > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}

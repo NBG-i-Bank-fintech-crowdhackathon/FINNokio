@@ -1,0 +1,14 @@
+main
+  h1 <span class="fontawesome-plane"></span> Moon Flights
+  h2 Select your flight dates below
+  #flight-datepicker(class="input-daterange input-group")
+    .form-item
+      label Depart on
+      span.fontawesome-calendar
+      input(type="text" class="input-sm form-control" id="start-date" name="start" placeholder="Select depart date" data-date-format="DD, MM d")
+      span.date-text.date-depart
+    .form-item
+      label Return on
+      span.fontawesome-calendar
+      input(type="text" class="input-sm form-control" id="end-date" name="end" placeholder="Select return date" data-date-format="DD, MM d")
+      span.date-text.date-return

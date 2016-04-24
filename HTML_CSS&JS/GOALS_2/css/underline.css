@@ -1,0 +1,38 @@
+
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.fancy {
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #02BBD2;
+  font-size: 1,4em;
+
+}
+
+.fancy2a {
+  border-width: 0 0 5px;
+  border-style: #02BBD2;
+  -webkit-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 stretch;
+       -o-border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 stretch;
+          border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill stretch;
+}
+
+.fancy2 {
+  box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.fancy3 {
+  background-color: #124662;
+}
+
+.fancy4 {
+  border-width: 0 0 5px;
+  border-style: solid;
+  -webkit-border-image: -webkit-linear-gradient(45deg, #0d3349, #155274) 10% round;
+       -o-border-image: linear-gradient(45deg, #0d3349, #155274) 10% round;
+          border-image: linear-gradient(45deg, #0d3349, #155274) 10% round;
+}
